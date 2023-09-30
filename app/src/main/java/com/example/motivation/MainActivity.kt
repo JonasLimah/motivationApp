@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater) //comunicação codigo com layout
         setContentView(binding.root)//usando metodos da raiz
-        binding.buttonClick.setOnClickListener(this)//setando o evento de click
+        binding.buttonNewPhrase.setOnClickListener(this)//setando o evento de click
 
     }
 
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         click()
     }
     private fun click(){
-        if (R.id.button_click == binding.buttonClick.id){
+        if (R.id.button_new_phrase == binding.buttonNewPhrase.id){
             Toast.makeText(this,"vitoria",Toast.LENGTH_SHORT).show()
         }
     }
