@@ -3,4 +3,8 @@
     <string name="welcome">Olá, Kotlin!</string>
     <string name="phrase">Tudo o que um sonho precisa para ser realizado é alguém que acredite que ele possa ser realizado..</string>
     <string name="new_phrase">NOVA FRASE</string>
+    <string name="save">SALVAR</string>
+    <string name="lets_get_started">Vamos começar?</string>
+    <string name="type_your_name">Digite seu nome</string>
+    <string name="validation_name">Informe seu nome</string>
 </resources>

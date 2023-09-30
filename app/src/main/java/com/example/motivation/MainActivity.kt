@@ -13,15 +13,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater) //comunicação codigo com layout
         setContentView(binding.root)//usando metodos da raiz
         binding.buttonNewPhrase.setOnClickListener(this)//setando o evento de click
-
+        supportActionBar?.hide()// esconder barra de navegaçao
+        // atribuindo ao texto welcome o valor do nosso storage
+        binding.textWelcome.text ="Olá ${SecurityPreferences(this).getString("USER_NAME")}"
     }
 
     override fun onClick(view: View) {
-        click()
+        if(view.id == R.id.button_new_phrase){
+            click()
+        }
     }
     private fun click(){
-        if (R.id.button_new_phrase == binding.buttonNewPhrase.id){
-            Toast.makeText(this,"vitoria",Toast.LENGTH_SHORT).show()
-        }
+        Toast.makeText(this,"vitoria",Toast.LENGTH_SHORT).show()
     }
 }

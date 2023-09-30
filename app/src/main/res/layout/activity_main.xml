@@ -19,7 +19,7 @@
             android:src="@drawable/infinity"
             android:layout_weight="1"
             android:padding="6dp"
-            />
+            app:tint="@color/white" />
         <ImageView
             android:layout_width="0dp"
             android:layout_height="40dp"
@@ -39,24 +39,25 @@
         android:id="@+id/text_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Olá, Kotlin!"
+        android:text="@string/welcome"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/linear_header"
         android:layout_marginTop="104dp"
         android:fontFamily="sans-serif-medium"
         android:textSize="14sp"
+        android:textStyle="bold"
         />
     <TextView
         android:id="@+id/text_phrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Olá, Kotlin sadjfnasdsaf fsdfsdaffa dasfadsfsdfsd dsfasdfsdfdsafd
-        adsfasfsafasdsj asdfasdihfaf!"
+        android:text="@string/phrase"
         android:textAlignment="center"
         android:layout_centerInParent="true"
         android:fontFamily="sans-serif-medium"
         android:textSize="18sp"
         android:padding="6dp"
+        android:textStyle="bold"
         />
     <View
         android:id="@+id/veiw_dash"
@@ -67,15 +68,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         />
+
     <Button
         android:id="@+id/button_new_phrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="NOVA FRASE"
         android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
         android:layout_marginBottom="120dp"
         android:backgroundTint="@color/dark_magneta"
-
-        />
+        android:fontFamily="@font/cabin"
+        android:textStyle="bold"
+        android:text="@string/new_phrase" />
 </RelativeLayout>
